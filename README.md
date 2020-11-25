@@ -22,6 +22,13 @@ _List the dataset(s) you want to use, and some ideas on how you expect to get, m
 - **The Mafiascum Dataset** ([[de Ruiter et al., 2018]](#deruiter)): [Dataset direct link](https://bitbucket.org/bopjesvla/thesis/src/master/).
 - **Werewolf for Telegram** ([Werewolf/Mafia](#mafia)): Custom datasets from the famous Telegram bot version of the game.
 
+**Town of Salem**'s dataset lists 8833 ranked games scraped from the [_Trial System_](https://town-of-salem.fandom.com/wiki/Trial_System) of the online plateform of the game. 
+The dataset is organized as a _json_ file where each game is represented as a python dictionnary with 4 keys:
+- `players`: general information about each of the 15 players of the game such as their account and pseudonym as well as information dealing with their involvement in the game (role, faction, time of their ingame death ...).
+- `entries`: chat logs displayed on the interface which can be messages from the players (eg. _"i think we have an sk"_) catalogued into python dictionnaries (with keys `type` containing different channels, ` author`, `text`, and `time`) or moderating informations such as the ingame time or trials outcome. Note that the minimum number of entries for a game is 89, maximum is 1539, with mean 526 and median 509.
+- `ranked`: boolean, `True` for each listed game.
+- `reportId`: unique identifier of the _Trial System_ characterizing a game/
+
 ## Methods
 The methodology will be the same than in [[Niculae et al., 2015]](#niculae) parts 4.2 and 4.3.
 
