@@ -11,10 +11,8 @@ We studied [[Niculae et al., 2015]](#niculae) and it enabled us to highlight cer
 _A list of research questions you would like to address during the project._
 
 1. Is it possible to apply the techniques seen in the article to other games?
-1. Is it possible to identify betrayal on a "long term" basis, i.e. deception (vs. in the article on a specific point in time)?
-1. What are the clues to identify "traitors" in social deduction games?
-
-**TODO** Question 1, ça sera avec le dataset original, puis question 2. avec Mafiascum, on fait une conslusion avec question 3 lol
+2. Is it possible to identify betrayal on a "long term" basis, i.e. deception (vs. in the article on a specific point in time)?
+3. What are the clues to identify "traitors" in social deduction games?
 
 ## Proposed dataset
 _List the dataset(s) you want to use, and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you've read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible given the datasets at hand._
@@ -33,7 +31,9 @@ The dataset is organized as a _json_ file where each game is represented as a py
 
 **TODO** Décrire ls datasets un peu mieux
 
-**TODO** Préciser quel data set on va privilégier, à savoir Betrayal (original set) et Mafiascum (test), parce que lol
+We plan to use the initial database (Linguistic Harbingers of Betrayal) in order to develop and test the algorithm supposed to reproduce the politeness of the messages. 
+
+Among the 3 new deduction games databases, we think that "The Mafiascum Dataset" is the one that will have the best chance to reproduce a successful result. Indeed, it is cleaner and has already been used in another study.
 
 ## Methods
 The methodology will be the same than in [[Niculae et al., 2015]](#niculae) parts 4.2 and 4.3.
@@ -48,7 +48,7 @@ The methodology will be the same than in [[Niculae et al., 2015]](#niculae) part
 - **Talkativeness**: Number of messages sent, average number of sentences per message, average number of words per sentence.
 - **Model**: Logistic regression for classification, "traitor" vs. "innocent".
 
-**TODO** Préciser qu'on va se concentrer sur talkativeness et politeness, en raison du temps lol
+For this project, we would like to focus on politeness and talkativeness. Indeed, because of the short time we have at our disposal, it would not be possible to analyze all the "harbingers".
 
 ## Proposed timeline
 - **Week 0**: Preliminary considerations
@@ -64,7 +64,7 @@ The methodology will be the same than in [[Niculae et al., 2015]](#niculae) part
 ## Organization within the team
 _A list of internal milestones up until project milestone P4. Add here a sketch of your planning for the next project milestone._
 
-We have four "harbingers" to study, namely talkativeness, politeness, argumentation and sentiment. Because of the time we will try to focus on politess, but we will try to work on the other "harbingers" as well.
+We have four "harbingers" to study, namely talkativeness, politeness, argumentation and sentiment. Because of the time we will try to focus on politeness and talkativeness, but we will try to work on the other "harbingers" as well.
 
 1. Reproduction: Create a notebook with a reproduction of the aformentionned methods on the original dataset.
 	- (Study the impact of "positive sentiment" and see if we get the same results.)
@@ -84,7 +84,7 @@ We have four "harbingers" to study, namely talkativeness, politeness, argumentat
 ## Questions for TAs (optional)
 _Add here any questions you have for us related to the proposed project._
 
-- None for the moment.
+- Is it feasible to reproduce the politeness test on our databases?
 
 ## References
 - <a name="danescu">**[Danescu-Niculescu-Mizil et al., 2013]**</a>: Cristian Danescu-Niculescu-Mizil, Moritz Sudhof, Dan Jurafsky, Jure Leskovec, Christopher Potts, *A computational approach to politeness with application to social factors*, ACL, 2013. [Original paper](https://nlp.stanford.edu/pubs/politeness.pdf).
