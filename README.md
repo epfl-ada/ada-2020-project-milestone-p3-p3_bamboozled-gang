@@ -27,7 +27,12 @@ The dataset is organized as a _json_ file where each game is represented as a py
 - `players`: general information about each of the 15 players of the game such as their account and pseudonym as well as information dealing with their involvement in the game (role, faction, time of their ingame death ...).
 - `entries`: chat logs displayed on the interface which can be messages from the players (eg. _"i think we have an sk"_) catalogued into python dictionnaries (with keys `type` containing different channels, ` author`, `text`, and `time`) or moderating informations such as the ingame time or trials outcome. Note that the minimum number of entries for a game is 89, maximum is 1539, with mean 526 and median 509.
 - `ranked`: boolean, `True` for each listed game.
-- `reportId`: unique identifier of the _Trial System_ characterizing a game/
+- `reportId`: unique identifier of the _Trial System_ characterizing a game.
+
+**The Mafiascum Dataset** is a collection of over 700 games of _Mafia_ played on an Internet forum. The interactions between players are scraped from this plateform. The data repository consists of several `.json` files that contain different informations about each game and each player and messages.
+Files with suffix `games` includes general identifier of the games, eg. id, title, moderator, or number of posts. 
+Files with suffix `slots` contains informations about the players such as the id of the game in which they took part, their role, and how their game ended (eg. "lynched Day 2", "died Night 5" or "survives").
+Finally files without specific suffix gather all textual interactions, their authors as well as the id of the games, and the index of the post within the game (random examples of messages: "i don't wanna be a chicken i don't wanna be a duck", "Also, Egg - I don't particularly find the peacemaker routine a town-thing generally."). 
 
 **TODO** Décrire ls datasets un peu mieux
 
