@@ -10,9 +10,11 @@ We studied [[Niculae et al., 2015]](#niculae) and it enabled us to highlight cer
 ## Research questions
 _A list of research questions you would like to address during the project._
 
-- Is it possible to apply the techniques seen in the article to other games?
-- Is it possible to identify betrayal on a "long term" basis (vs. in the article on a specific point in time)?
-- What are the clues to identify "traitors" in social deduction games?
+1. Is it possible to apply the techniques seen in the article to other games?
+1. Is it possible to identify betrayal on a "long term" basis, i.e. deception (vs. in the article on a specific point in time)?
+1. What are the clues to identify "traitors" in social deduction games?
+
+**TODO** Question 1, ça sera avec le dataset original, puis question 2. avec Mafiascum, on fait une conslusion avec question 3 lol
 
 ## Proposed dataset
 _List the dataset(s) you want to use, and some ideas on how you expect to get, manage, process, and enrich it/them. Show us that you've read the docs and some examples, and that you have a clear idea on what to expect. Discuss data size and format if relevant. It is your responsibility to check that what you propose is feasible given the datasets at hand._
@@ -29,6 +31,10 @@ The dataset is organized as a _json_ file where each game is represented as a py
 - `ranked`: boolean, `True` for each listed game.
 - `reportId`: unique identifier of the _Trial System_ characterizing a game/
 
+**TODO** Décrire ls datasets un peu mieux
+
+**TODO** Préciser quel data set on va privilégier, à savoir Betrayal (original set) et Mafiascum (test), parce que lol
+
 ## Methods
 The methodology will be the same than in [[Niculae et al., 2015]](#niculae) parts 4.2 and 4.3.
 
@@ -41,6 +47,8 @@ The methodology will be the same than in [[Niculae et al., 2015]](#niculae) part
 - **Politeness**: Politeness measurment of each message using the Stanford Politeness classifier (*ibidem*).
 - **Talkativeness**: Number of messages sent, average number of sentences per message, average number of words per sentence.
 - **Model**: Logistic regression for classification, "traitor" vs. "innocent".
+
+**TODO** Préciser qu'on va se concentrer sur talkativeness et politeness, en raison du temps lol
 
 ## Proposed timeline
 - **Week 0**: Preliminary considerations
@@ -59,8 +67,8 @@ _A list of internal milestones up until project milestone P4. Add here a sketch 
 We have four "harbingers" to study, namely talkativeness, politeness, argumentation and sentiment. Because of the time we will try to focus on politess, but we will try to work on the other "harbingers" as well.
 
 1. Reproduction: Create a notebook with a reproduction of the aformentionned methods on the original dataset.
-	- Study the impact of "positive sentiment" and see if we get the same results.
-	- Study the impact of "planning discourse markers" and see if we get the same results.
+	- (Study the impact of "positive sentiment" and see if we get the same results.)
+	- (Study the impact of "planning discourse markers" and see if we get the same results.)
 	- Study the impact of "politeness" and see if we get the same results.
 	- Study the impact of "talkativeness" and see if we get the same results.
 2. Abstraction: "Abstract"/"Factorize" the elements of the notebook to create an API applicable to other games.
@@ -70,6 +78,8 @@ We have four "harbingers" to study, namely talkativeness, politeness, argumentat
 	- Sanitize and normalize the dataset to be used with our API.
 	- Apply the methods using our API.
 	- Compare results with the original paper.
+	
+**TODO** Préciser qui fait quoi lol
 
 ## Questions for TAs (optional)
 _Add here any questions you have for us related to the proposed project._
