@@ -92,7 +92,7 @@ We have four "harbingers" to study, namely talkativeness, politeness, argumentat
 ## Questions for TAs (optional)
 _Add here any questions you have for us related to the proposed project._
 
-- Is it feasible to reproduce the politeness test on our databases?
+- None
 
 ## References
 - <a name="danescu">**[Danescu-Niculescu-Mizil et al., 2013]**</a>: Cristian Danescu-Niculescu-Mizil, Moritz Sudhof, Dan Jurafsky, Jure Leskovec, Christopher Potts, *A computational approach to politeness with application to social factors*, ACL, 2013. [Original paper](https://nlp.stanford.edu/pubs/politeness.pdf).
