@@ -34,7 +34,7 @@ Files with suffix `games` includes general identifier of the games, eg. id, titl
 Files with suffix `slots` contains informations about the players such as the id of the game in which they took part, their role, and how their game ended (eg. "lynched Day 2", "died Night 5" or "survives").
 Finally files without specific suffix gather all textual interactions, their authors as well as the id of the games, and the index of the post within the game (random examples of messages: "i don't wanna be a chicken i don't wanna be a duck", "Also, Egg - I don't particularly find the peacemaker routine a town-thing generally."). 
 
-Finally **Werewolf for Telegram**'s dataset is a raw set of text messages exchanged on _Telegram_ directly downloaded from the bot. It would represent an important workload in terms of cleaning and shaping the data, therefore we don't plan to focus on this one. However, if time allows or for further investigations, it could be a great substrate to work on.
+Finally **Werewolf for Telegram**'s dataset is a raw set of text messages exchanged on _Telegram_ directly scraped from the bot. It would represent an important workload in terms of cleaning and shaping the data, therefore we don't plan to focus on this one. However, if time allows or for further investigations, it could be a great substrate to work on.
 
 To sum up, we plan to use the initial database (Linguistic Harbingers of Betrayal) in order to develop and test the algorithm supposed to analyze different features of futher datasets.
 Moreove among the 3 new deduction games databases, we think that "The Mafiascum Dataset" is the one that will have the best chance to reproduce a successful result. Indeed, it is cleaner and has already been used in another study.
