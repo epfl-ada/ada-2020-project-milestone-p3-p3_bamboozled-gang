@@ -29,16 +29,15 @@ The dataset is organized as a _json_ file where each game is represented as a py
 - `ranked`: boolean, `True` for each listed game.
 - `reportId`: unique identifier of the _Trial System_ characterizing a game.
 
-**The Mafiascum Dataset** is a collection of over 700 games of _Mafia_ played on an Internet forum. The interactions between players are scraped from this plateform. The data repository consists of several `.json` files that contain different informations about each game and each player and messages.
+**The Mafiascum Dataset** is a collection of over 700 games of [_Mafia_](#mafia) played on an Internet forum. The interactions between players are scraped from this plateform. The data repository consists of several _json_ files that contain different informations about each game and each player and messages.
 Files with suffix `games` includes general identifier of the games, eg. id, title, moderator, or number of posts. 
 Files with suffix `slots` contains informations about the players such as the id of the game in which they took part, their role, and how their game ended (eg. "lynched Day 2", "died Night 5" or "survives").
 Finally files without specific suffix gather all textual interactions, their authors as well as the id of the games, and the index of the post within the game (random examples of messages: "i don't wanna be a chicken i don't wanna be a duck", "Also, Egg - I don't particularly find the peacemaker routine a town-thing generally."). 
 
-**TODO** Décrire ls datasets un peu mieux
+Finally **Werewolf for Telegram**'s dataset is a raw set of text messages exchanged on _Telegram_ directly downloaded from the bot. It would represent an important workload in terms of cleaning and shaping the data, therefore we don't plan to focus on this one. However, if time allows or for further investigations, it could be a great substrate to work on.
 
-We plan to use the initial database (Linguistic Harbingers of Betrayal) in order to develop and test the algorithm supposed to reproduce the politeness of the messages. 
-
-Among the 3 new deduction games databases, we think that "The Mafiascum Dataset" is the one that will have the best chance to reproduce a successful result. Indeed, it is cleaner and has already been used in another study.
+To sum up, we plan to use the initial database (Linguistic Harbingers of Betrayal) in order to develop and test the algorithm supposed to analyze different features of futher datasets.
+Moreove among the 3 new deduction games databases, we think that "The Mafiascum Dataset" is the one that will have the best chance to reproduce a successful result. Indeed, it is cleaner and has already been used in another study.
 
 ## Methods
 The methodology will be the same than in [[Niculae et al., 2015]](#niculae) parts 4.2 and 4.3.
@@ -49,7 +48,7 @@ The methodology will be the same than in [[Niculae et al., 2015]](#niculae) part
 	- Explicit discourse connectors per sentence measurment ([[Prasad et al., 2008]](#prasad)).
 	- Average number of claim and premise markers per sentence calculation ([[Stab et al., 2014]](#stab)).
 	- Number of request sentences in each message measurment using the heuristics in the Stanford Politeness classifier ([[Danescu-Niculescu-Mizil et al., 2013]](#danescu)).
-- **Politeness**: Politeness measurment of each message using the Stanford Politeness classifier (*ibidem*).
+- **Politeness**: Politeness measurment of each message using the Stanford Politeness classifier (*ibidem*) - using [CovoKit](#convkit) toolkit.
 - **Talkativeness**: Number of messages sent, average number of sentences per message, average number of words per sentence.
 - **Model**: Logistic regression for classification, "traitor" vs. "innocent".
 
@@ -84,8 +83,6 @@ We have four "harbingers" to study, namely talkativeness, politeness, argumentat
 	- Apply the methods using our API.
 	- Compare results with the original paper.
 	
-**TODO** Préciser qui fait quoi lol
-
 ## Questions for TAs (optional)
 _Add here any questions you have for us related to the proposed project._
 
