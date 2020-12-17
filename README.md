@@ -94,6 +94,16 @@ _Add here any questions you have for us related to the proposed project._
 
 - None
 
+## So who did what ?
+
+* Noé and Emmanuel did the data concierging as well as the analysis of talkativeness. 
+* Hugo and Neil handled politeness
+* Noé did an API to plot all the data (that was a real time saver for the others)
+* Hugo handled the data story
+* Hugo wrote the pitch for the video
+* Neil performed in the video
+* Of course, everyone reviewed every part he did not do and contributed, it's a team work !
+
 ## References
 - <a name="danescu">**[Danescu-Niculescu-Mizil et al., 2013]**</a>: Cristian Danescu-Niculescu-Mizil, Moritz Sudhof, Dan Jurafsky, Jure Leskovec, Christopher Potts, *A computational approach to politeness with application to social factors*, ACL, 2013. [Original paper](https://nlp.stanford.edu/pubs/politeness.pdf).
 - <a name="niculae">**[Niculae et al., 2015]**</a>: Vlad Niculae, Srijan Kumar, Jordan Boyd-Graber, Cristian Danescu-Niculescu-Mizil, *Linguistic Harbingers of Betrayal: A Case Study on an Online Strategy Game*, Proceedings of ACL, 2015. [Original paper](https://vene.ro/betrayal/niculae15betrayal.pdf), [website](https://vene.ro/betrayal/).
